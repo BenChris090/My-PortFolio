@@ -14,6 +14,7 @@ function mob_nMode() {
     // document.getElementById("relText").style.color = "white";
     document.getElementById("txtMob").style.color = "white";
     document.getElementById("txt2").style.color = "white";
+    document.getElementById("txt3").style.color = "white";
     document.getElementById("night").style.display = "none";
     document.getElementById("day").style.display = "flex";
     document.getElementById("main").style.boxShadow = "0px 15px 10px -15px white";
@@ -26,6 +27,7 @@ function mob_lMode() {
     // document.getElementById("relText").style.color = "black";
     document.getElementById("txtMob").style.color = "black";
     document.getElementById("txt2").style.color = "black";
+    document.getElementById("txt3").style.color = "black";
     document.getElementById("day").style.display = "none";
 }
 // mobile functions ends here
@@ -36,6 +38,7 @@ function nMode() {
   // document.getElementById("relText").style.color = "white";
   document.getElementById("txt1").style.color = "white";
   document.getElementById("txt2").style.color = "white";
+  document.getElementById("txt3").style.color = "white";
   document.getElementById("nights").style.display = "none";
   document.getElementById("days").style.display = "flex";
   document.getElementById("main").style.boxShadow = "0px 15px 10px -15px white";
@@ -48,6 +51,7 @@ function lMode() {
   // document.getElementById("relText").style.color = "black";
   document.getElementById("txt1").style.color = "black";
   document.getElementById("txt2").style.color = "black";
+  document.getElementById("txt3").style.color = "black";
   document.getElementById("days").style.display = "none";
   document.getElementById("main").style.boxShadow = "0px 15px 10px -15px grey";
 }
