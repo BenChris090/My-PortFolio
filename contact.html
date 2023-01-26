@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICE-BERG PORTFOLIO | HOME</title>
+    <title>ICE-BERG PORTFOLIO | CONTACT ME</title>
     <link href="/build/tailwind.css" rel="stylesheet">
     <link rel="stylesheet" href="css/all.css">
     <link rel="icon" href="images/ICE_LOGO_temp_3.png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js/index.js"></script>
+    <script src="js/about.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
     </style>
 </head>
-<body class="w-screen h-screen lg:overflow-x-hidden lg:overflow-y-auto">
+<body class="w-screen h-screen overflow-y-auto lg:overflow-x-hidden lg:overflow-y-auto">
     <!-- Nav Starts Here -->
     <!-- My Mobile Nav Starts Here -->
     <div id="mNav" class="h-screen w-96 hidden z-0 fixed left-0 top-0 bg-black overflow-x-hidden pt-28 ease-in duration-500">
         <a href="javascript:void(0)"><i class="fas fa-times fa-2x text-cyan-500 absolute top-4 right-9" onclick="closeNav()"></i></a>
-        <a href="index.html" class="text-cyan-500 mt-5 text-center space-y-2 block text-xl">HOME</a></li>
-        <a href="about.html" class="text-gray-200 mt-10 text-center space-y-2 block hover:text-cyan-500 ease-in duration-500 text-xl">ABOUT <span>ME</span></a></li>
+        <a href="index.html" class="text-gray-200 mt-5 text-center space-y-2 block text-xl  hover:text-cyan-500 ease-in duration-500">HOME</a></li>
+        <a href="about.html" class="text-cyan-500 mt-10 text-center space-y-2 block text-xl hover:text-cyan-500 ease-in duration-500">ABOUT <span>ME</span></a></li>
         <a href="https://github.com/BenChris090?tab=repositories" class="text-gray-200 mt-10 text-center space-y-2 block hover:text-cyan-500 ease-in duration-500 text-xl">OTHER <span>PROJECTS</span></a></li>
-        <a href="#" class="text-gray-200 mt-10 text-center space-y-2 block hover:text-cyan-500 ease-in duration-500 text-xl">CONTACT <span>ME</span></a></li>
+        <a href="contact.html" class="text-cyan-500 mt-10 text-center space-y-2 block text-xl">CONTACT <span>ME</span></a></li>
     </div>
     <!-- My Mobile Nav Ends Here -->
     <nav id="main" class="w-screen flex justify-between bg-white px-2 py-2 lg:shadow-lg lg:shadow-grey-700 lg:px-6 lg:space-y-4 lg:sticky lg:top-0">
@@ -37,28 +37,18 @@
         </ul>
         <!-- My Desktop Nav Starts Here -->
         <ul id="dxktpNav" class="hidden items-center text-center lg:flex lg:pt-2 lg:space-x-10 lg:pb-5">
-            <li><a href="index.html" class="text-cyan-500 text-xl"><b>HOME</b></a></li>
+            <li><a href="index.html" class="text-gray-400 text-xl hover:text-cyan-500 ease-in duration-500"><b>HOME</b></a></li>
             <li><a href="about.html" class="text-gray-400 text-xl hover:text-cyan-500 ease-in duration-500"><b>ABOUT ME</b></a></li>
             <li><a href="https://github.com/BenChris090?tab=repositories" class="text-gray-400 text-xl hover:text-cyan-500 ease-in duration-500"><b>OTHER <span>PROJECTS</span></b></a></li>
-            <li><a href="#" class="text-gray-400 text-xl hover:text-cyan-500 ease-in duration-500"><b>CONTACT <span>ME</span></b></a></li>
+            <li><a href="contact.html" class="text-cyan-500 text-xl hover:text-cyan-500 ease-in duration-500"><b>CONTACT <span>ME</span></b></a></li>
             <li id="days" class="hidden"><i class="fas fa-sun fa-2x text-gray-400 ml-20 hover:text-cyan-500 ease-in duration-500" onclick="lMode()"></i></li>
             <li id="nights"><i class="fas fa-moon fa-2x text-gray-400 ml-20 hover:text-cyan-500 ease-in duration-500" onclick="nMode()"></i></li>
             <li><a href="login.html" class="text-gray-400 border-2 border-gray-400 rounded-3xl px-4 hover:text-cyan-500 hover:border-cyan-500 border-2 ease-in duration-500 text-xl">HIRE ME</a></li>
         </ul>
         <!-- My Desktop Nav Ends Here -->
     </nav>
-    <main class="w-screen flex p-4 mt-7 lg:items-center lg:justify-around lg:justify-center lg:mx-auto lg:max-w-6xl lg:mt-10">
-        <div id="txt1" class="space-y-2 lg:space-y-1 w-full pt-7 lg:w-1/2 lg:py-2 lg:mx-auto">
-            <h1 class="top-3 text-cyan-500 text-4xl lg:text-6xl"><span><p id="txtMob" class="text-sm text-black ease-in duration-500 lg:text-2xl">Hello, I Am</p></span><b>ONYEKA<br><span id="txt2" class="text-black text-3xl hover:text-cyan-500 ease-in duration-500 lg:text-5xl">BENEDICT OMEWU</span></b><br><span id="txtJob" class="inline-block text-black text-2xl mt-2 ease-in duration-500 lg:text-4xl lg:mt-5">I am a Backend Developer <br>and Tech fanatic.</span></h1>
-            <p id="txt1" class="text-justify ease-in duration-500 lg:text-xl lg:pt-4 lg:max-w-sm">I build effective websites to help both groups and individuals implement certain stressful tasks digitally without the stress.</p>
-
-            <ul class="flex lg:pt-2">
-                <li><i id="txt3" class="fas fa-at fa-2x text-black hover:text-cyan-500 ease-in duration-500"></i></li>
-                <li><i id="txt4" class="fab fa-twitter fa-2x text-black  ml-2 lg:ml-20 hover:text-cyan-500 ease-in duration-500"></i></li>
-                <li><i id="txt5" class="fab fa-github fa-2x text-black ml-2 lg:ml-20 hover:text-cyan-500 ease-in duration-500"></i></li>
-                <li><i id="txt6" class="fab fa-linkedin fa-2x text-black ml-2 lg:ml-20 hover:text-cyan-500 ease-in duration-500"></i></li>
-            </ul>
-        </div>
+    <main class="w-screen overflow-y-auto flex p-4 mt-7 lg:justify-around lg:mx-auto lg:px-auto lg:max-w-6xl lg:mt-10">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti debitis officiis aliquam error. Dignissimos non dolorem, vero temporibus neque ullam doloribus in doloremque laboriosam earum, sapiente facere sit eligendi odit?</p>
     </main>
 </body>
 </html>

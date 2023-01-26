@@ -1,18 +1,22 @@
 // /* Set the width of the side navigation to 250px */
 function openNav() {
-    document.getElementById("mNav").style.width = "200px";
-  }
-  
-  /* Set the width of the side navigation to 0 */
-  function closeNav() {
-    document.getElementById("mNav").style.width = "0";
-  }
+  document.getElementById("mNav").style.display = "block";
+}
+
+// /* Set the width of the side navigation to 0 */
+// /* Set the display of the side navigation to none */
+function closeNav() {
+  document.getElementById("mNav").style.display = "none";
+}
 
 // mobile functions start here
 function mob_nMode() {
     document.body.style.backgroundColor = "black";
+    document.getElementById("main").style.backgroundColor = "black";
     // document.getElementById("relText").style.color = "white";
     document.getElementById("txtMob").style.color = "white";
+    document.getElementById("txtJob").style.color = "white";
+    document.getElementById("txt1").style.color = "white";
     document.getElementById("txt2").style.color = "white";
     document.getElementById("txt3").style.color = "white";
     document.getElementById("txt4").style.color = "white";
@@ -20,29 +24,36 @@ function mob_nMode() {
     document.getElementById("txt6").style.color = "white";
     document.getElementById("night").style.display = "none";
     document.getElementById("day").style.display = "flex";
-    document.getElementById("main").style.boxShadow = "0px 15px 10px -15px white";
+    document.getElementById("main").style.boxShadow = "0px 15px 10px -15px black";
     // 0px 15px 10px -15px #111
 }
 
 function mob_lMode() {
     document.getElementById("night").style.display = "flex";
     document.body.style.backgroundColor = "white";
+    document.getElementById("main").style.backgroundColor = "white";
     // document.getElementById("relText").style.color = "black";
     document.getElementById("txtMob").style.color = "black";
+    document.getElementById("txtJob").style.color = "black";
+    document.getElementById("txt1").style.color = "black";
     document.getElementById("txt2").style.color = "black";
     document.getElementById("txt3").style.color = "black";
     document.getElementById("txt4").style.color = "black";
     document.getElementById("txt5").style.color = "black";
     document.getElementById("txt6").style.color = "black";
     document.getElementById("day").style.display = "none";
+    document.getElementById("main").style.boxShadow = "0px 15px 10px -15px grey";
 }
 // mobile functions ends here
 
 // desktop functions start here
 function nMode() {
   document.body.style.backgroundColor = "black";
+  document.getElementById("main").style.backgroundColor = "black";
   // document.getElementById("relText").style.color = "white";
   document.getElementById("txtMob").style.color = "white";
+  document.getElementById("txtJob").style.color = "white";
+  document.getElementById("txt1").style.color = "white";
   document.getElementById("txt2").style.color = "white";
   document.getElementById("txt3").style.color = "white";
   document.getElementById("txt4").style.color = "white";
@@ -50,15 +61,18 @@ function nMode() {
   document.getElementById("txt6").style.color = "white";
   document.getElementById("nights").style.display = "none";
   document.getElementById("days").style.display = "flex";
-  document.getElementById("main").style.boxShadow = "0px 15px 10px -15px white";
+  document.getElementById("main").style.boxShadow = "0px 15px 10px -15px black";
   // 0px 15px 10px -15px #111
 }
 
 function lMode() {
   document.getElementById("nights").style.display = "flex";
   document.body.style.backgroundColor = "white";
+  document.getElementById("main").style.backgroundColor = "white";
   // document.getElementById("relText").style.color = "black";
   document.getElementById("txtMob").style.color = "black";
+  document.getElementById("txtJob").style.color = "black";
+  document.getElementById("txt1").style.color = "black";
   document.getElementById("txt2").style.color = "black";
   document.getElementById("txt3").style.color = "black";
   document.getElementById("txt4").style.color = "black";
