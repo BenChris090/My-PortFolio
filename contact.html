@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="icon" href="images/ICE_LOGO_temp_3.png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js/about.js"></script>
+    <script src="js/contact.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
     </style>
@@ -20,7 +20,7 @@
     <div id="mNav" class="h-screen w-96 hidden z-0 fixed left-0 top-0 bg-black overflow-x-hidden pt-28 ease-in duration-500">
         <a href="javascript:void(0)"><i class="fas fa-times fa-2x text-cyan-500 absolute top-4 right-9" onclick="closeNav()"></i></a>
         <a href="index.html" class="text-gray-200 mt-5 text-center space-y-2 block text-xl  hover:text-cyan-500 ease-in duration-500">HOME</a></li>
-        <a href="about.html" class="text-cyan-500 mt-10 text-center space-y-2 block text-xl hover:text-cyan-500 ease-in duration-500">ABOUT <span>ME</span></a></li>
+        <a href="about.html" class="text-gray-200 mt-10 text-center space-y-2 block text-xl hover:text-cyan-500 ease-in duration-500">ABOUT <span>ME</span></a></li>
         <a href="https://github.com/BenChris090?tab=repositories" class="text-gray-200 mt-10 text-center space-y-2 block hover:text-cyan-500 ease-in duration-500 text-xl">OTHER <span>PROJECTS</span></a></li>
         <a href="contact.html" class="text-cyan-500 mt-10 text-center space-y-2 block text-xl">CONTACT <span>ME</span></a></li>
     </div>
@@ -47,8 +47,44 @@
         </ul>
         <!-- My Desktop Nav Ends Here -->
     </nav>
-    <main class="w-screen overflow-y-auto flex p-4 mt-7 lg:justify-around lg:mx-auto lg:px-auto lg:max-w-6xl lg:mt-10">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti debitis officiis aliquam error. Dignissimos non dolorem, vero temporibus neque ullam doloribus in doloremque laboriosam earum, sapiente facere sit eligendi odit?</p>
+    <main class="w-screen overflow-y-auto lg:flex p-4 mt-7 lg:justify-around lg:mx-auto lg:px-auto lg:max-w-6xl lg:mt-10">
+        <div class="space-y-4 w-full pt-7 lg:overflow-y-auto lg:w-1/2 lg:py-2">
+            <h1 class="text-3xl lg:text-6xl ease-in duration-500"><span><i class="fas fa-terminal fa-sm text-cyan-500"></i> </span><b  id="txtHead" >Contact_Me</b></h1>
+            <p id="txtBod" class="text-lg text-justify ease-in duration-500">Want me on a project? Don't hesitate to reach out using the form below. reach me on 
+                any of my social media accounts or just send an e-mail
+            </p>
+            <p class=" space-x-2 text-lg lg:text-xl">
+                <span><a href="https://twitter.com/Benedic98349748"></a><i id="txtBod2" class="fab fa-twitter fa-2x text-black hover:text-cyan-500 ease-in duration-500"></i></span>
+                <span><a href="https://github.com/BenChris090"><i id="txtBod3" class="fab fa-github fa-2x text-black ml-2 lg:ml-6 hover:text-cyan-500 ease-in duration-500"></i></a></span>
+                <span><a href="https://linkedin.com/in/niklaus-omewu-63a7b7247"><i id="txtBod4" class="fab fa-linkedin fa-2x text-black ml-2 lg:ml-6 hover:text-cyan-500 ease-in duration-500"></i></a></span>
+                <span><a href="https://instagram.com/ice_berg0101"><i id="txtBod5" class="fab fa-instagram fa-2x text-black ml-2 lg:ml-6 hover:text-cyan-500 ease-in duration-500"></i></a></span>
+            </p>
+            <p class="text-lg text-cyan-500 text-justify">benedictchrstn@gmail.com</p>
+            <div class="py-2 lg:hidden">
+                <form action="">
+                    <input class="w-full p-2 border-2 border-cyan-500 bg-gray-700 rounded-lg ease-in duration-500 mt-4" type="text"
+                        placeholder="Name"> <br>
+                    <input class="w-full p-2 border-2 border-cyan-500 bg-gray-700 rounded-lg ease-in duration-500 mt-4" type="email"
+                        placeholder="Email"> <br>
+                    <textarea class="w-full p-2 placeholder:-translate-y-0 border-2 border-cyan-500 bg-gray-700 rounded-lg ease-in duration-500 mt-4" type="text"
+                        rows="10" cols="5" placeholder="Your message"></textarea> <br>
+                    <button id="txtBod6"
+                        class="w-full p-2 text-lg border-2 border-cyan-500 bg-cyan-500 rounded-lg ease-in duration-500 mt-4">Send message</button>
+                </form>
+            </div>
+        </div>
+        <div class="p-2 hidden lg:block lg:w-1/3 lg:h-96">
+            <form action="">
+                <input class="w-full p-2 border-2 border-cyan-500 bg-gray-700 rounded-lg ease-in duration-500 mt-4" type="text"
+                    placeholder="Name"> <br>
+                <input class="w-full p-2 border-2 border-cyan-500 bg-gray-700 rounded-lg ease-in duration-500 mt-4" type="email"
+                    placeholder="Email"> <br>
+                <textarea class="w-full p-2 placeholder:-translate-y-0 border-2 border-cyan-500 bg-gray-700 rounded-lg ease-in duration-500 mt-4" type="text"
+                    rows="10" cols="5" placeholder="Your message"></textarea> <br>
+                <button id="txtBod6"
+                    class="w-full p-2 text-lg border-2 border-cyan-500 bg-cyan-500 rounded-lg ease-in duration-500 mt-4">Send message</button>
+            </form>
+        </div>
     </main>
 </body>
 </html>
