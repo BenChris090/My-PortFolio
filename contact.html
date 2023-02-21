@@ -7,9 +7,9 @@
     <title>ICE-BERG PORTFOLIO | CONTACT ME</title>
     <link href="/build/tailwind.css" rel="stylesheet">
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="images/ICE_LOGO_temp_3.png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js/contact.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
     </style>
@@ -25,14 +25,13 @@
         <a href="contact.html" class="text-cyan-500 mt-10 text-center space-y-2 block text-xl">CONTACT <span>ME</span></a></li>
     </div>
     <!-- My Mobile Nav Ends Here -->
-    <nav id="main" class="w-screen flex justify-between bg-white px-2 py-2 lg:shadow-lg lg:shadow-grey-700 lg:px-6 lg:space-y-4 lg:sticky lg:top-0">
+    <nav id="main" class="w-screen flex justify-between px-2 py-2 lg:shadow-lg lg:shadow-grey-700 lg:px-6 lg:space-y-4 lg:sticky lg:top-0">
         <a href="index.html" class="flex items-center">
             <img src="images/ICE_LOGO_temp_3.png" class="h-12 mr-3 sm:h-16 lg:h-16">
             <span class="self-center text-3xl font-semibold whitespace-nowrap text-cyan-500 lg:text-4xl">ICE-BERG</span>
         </a>
         <ul class="flex items-center space-x-5 lg:hidden">
-            <li id="day" class="hidden"><i class="fas fa-sun fa-2x text-cyan-500 my-2" onclick="mob_lMode()"></i></li>
-            <li id="night"><i class="fas fa-moon fa-2x text-cyan-500 my-2" onclick="mob_nMode()"></i></li>
+            <li><i  id="MobIcon" class="fas fa-moon fa-2x text-cyan-500" onclick="toggleMobModes()"></i></li>
             <li><i class="fas fa-bars fa-2x text-cyan-500 my-2" onclick="openNav()"></i></li>
         </ul>
         <!-- My Desktop Nav Starts Here -->
@@ -41,23 +40,22 @@
             <li><a href="about.html" class="text-gray-400 text-xl hover:text-cyan-500 ease-in duration-500"><b>ABOUT ME</b></a></li>
             <li><a href="https://github.com/BenChris090?tab=repositories" class="text-gray-400 text-xl hover:text-cyan-500 ease-in duration-500"><b>OTHER <span>PROJECTS</span></b></a></li>
             <li><a href="contact.html" class="text-cyan-500 text-xl hover:text-cyan-500 ease-in duration-500"><b>CONTACT <span>ME</span></b></a></li>
-            <li id="days" class="hidden"><i class="fas fa-sun fa-2x text-gray-400 ml-20 hover:text-cyan-500 ease-in duration-500" onclick="lMode()"></i></li>
-            <li id="nights"><i class="fas fa-moon fa-2x text-gray-400 ml-20 hover:text-cyan-500 ease-in duration-500" onclick="nMode()"></i></li>
-            <li><a href="mailto:benedictchrstn@gmail.com" class="text-gray-400 border-2 border-gray-400 rounded-3xl px-4 hover:text-cyan-500 hover:border-cyan-500 border-2 ease-in duration-500 text-xl">HIRE ME</a></li>
+            <li><i  id="icon" class="fas fa-moon fa-2x text-gray-400 ml-20 hover:text-cyan-500 ease-in duration-500" onclick="toggleModes()"></i></li>
+            <li><a href="mailto:benedictchrstn@gmail.com" class="text-gray-400 border-2 border-gray-400 rounded-3xl px-4 hover:text-cyan-500 hover:border-cyan-500 ease-in duration-500 text-xl">HIRE ME</a></li>
         </ul>
         <!-- My Desktop Nav Ends Here -->
     </nav>
     <main class="w-screen overflow-y-auto lg:flex p-4 mt-7 lg:justify-around lg:mx-auto lg:px-auto lg:max-w-6xl lg:mt-10">
         <div class="space-y-4 w-full pt-7 lg:overflow-y-auto lg:w-1/2 lg:py-2">
-            <h1 class="text-3xl lg:text-6xl ease-in duration-500"><span><i class="fas fa-terminal fa-sm text-cyan-500"></i> </span><b  id="txtHead" >Contact_Me</b></h1>
-            <p id="txtBod" class="text-lg text-justify ease-in duration-500">Want me on a project? Don't hesitate to reach out using the form below. reach me on 
+            <h1 class="text-3xl lg:text-6xl"><span><i class="fas fa-terminal fa-sm text-cyan-500"></i> </span><b class="txt-1 ease-in duration-500" >Contact_Me</b></h1>
+            <p class="txt-1 text-lg text-justify ease-in duration-500">Want me on a project? Don't hesitate to reach out using the form below. reach me on 
                 any of my social media accounts or just send an e-mail
             </p>
-            <p class=" space-x-2 text-lg lg:text-xl">
-                <span><a href="https://twitter.com/Benedic98349748"></a><i id="txtBod2" class="fab fa-twitter fa-2x text-black hover:text-cyan-500 ease-in duration-500"></i></span>
-                <span><a href="https://github.com/BenChris090"><i id="txtBod3" class="fab fa-github fa-2x text-black ml-2 lg:ml-6 hover:text-cyan-500 ease-in duration-500"></i></a></span>
-                <span><a href="https://linkedin.com/in/niklaus-omewu-63a7b7247"><i id="txtBod4" class="fab fa-linkedin fa-2x text-black ml-2 lg:ml-6 hover:text-cyan-500 ease-in duration-500"></i></a></span>
-                <span><a href="https://instagram.com/ice_berg0101"><i id="txtBod5" class="fab fa-instagram fa-2x text-black ml-2 lg:ml-6 hover:text-cyan-500 ease-in duration-500"></i></a></span>
+            <p class="txt-1 space-x-2 text-lg lg:text-xl">
+                <span><a href="https://twitter.com/Benedic98349748"></a><i class="fab fa-twitter fa-2x hover:text-cyan-500 ease-in duration-500"></i></span>
+                <span><a href="https://github.com/BenChris090"><i class="fab fa-github fa-2x ml-2 lg:ml-6 hover:text-cyan-500 ease-in duration-500"></i></a></span>
+                <span><a href="https://linkedin.com/in/niklaus-omewu-63a7b7247"><i class="fab fa-linkedin fa-2x ml-2 lg:ml-6 hover:text-cyan-500 ease-in duration-500"></i></a></span>
+                <span><a href="https://instagram.com/ice_berg0101"><i class="fab fa-instagram fa-2x ml-2 lg:ml-6 hover:text-cyan-500 ease-in duration-500"></i></a></span>
             </p>
             <p class="text-lg text-cyan-500 text-justify">benedictchrstn@gmail.com</p>
             <div class="py-2 lg:hidden">
@@ -79,7 +77,7 @@
                     placeholder="Name"> <br>
                 <input class="w-full text-white p-2 border-2 border-cyan-500 bg-gray-700 rounded-lg ease-in duration-500 mt-4" type="email"
                     placeholder="Email"> <br>
-                <textarea class="w-full text-white p-2 placeholder:-translate-y-0 border-2 border-cyan-500 bg-gray-700 rounded-lg ease-in duration-500 mt-4" type="text"
+                <textarea class="w-full text-white p-2 border-2 border-cyan-500 bg-gray-700 rounded-lg ease-in duration-500 mt-4" type="text"
                     rows="10" cols="5" placeholder="Your message"></textarea> <br>
                 <button id="txtBod6"
                     class="w-full p-2 text-lg border-2 border-cyan-500 bg-cyan-500 rounded-lg ease-in duration-500 mt-4">Send message</button>
@@ -87,4 +85,5 @@
         </div>
     </main>
 </body>
+<script src="js/index.js"></script>
 </html>

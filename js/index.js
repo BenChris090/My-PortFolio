@@ -1,3 +1,38 @@
+let darkMode = localStorage.getItem("dark-mode");
+
+function toggleMobModes() {
+  const icon = document.getElementById("MobIcon");
+  document.body.classList.toggle("dark");
+  if(document.body.classList.contains("dark")){
+    icon.classList.remove("fa-moon");
+    icon.classList.add("fa-sun");
+    localStorage.setItem("dark-mode", true);
+  }else{
+    icon.classList.remove("fa-sun");
+    icon.classList.add("fa-moon");
+    localStorage.setItem("dark-mode", false);
+  }
+}
+
+function toggleModes() {
+  const icon = document.getElementById("icon");
+  document.body.classList.toggle("dark");
+  if(document.body.classList.contains("dark")){
+    icon.classList.remove("fa-moon");
+    icon.classList.add("fa-sun");
+    localStorage.setItem("dark-mode", true);
+  }else{
+    icon.classList.remove("fa-sun");
+    icon.classList.add("fa-moon");
+    localStorage.setItem("dark-mode", false);
+  }
+}
+
+if (darkMode === 'true') {
+  toggleModes(); // set state of darkMode on page load
+  toggleMobModes(); // set state of darkMode on page load
+}
+
 // /* Set the width of the side navigation to 250px */
 function openNav() {
   document.getElementById("mNav").style.display = "block";
@@ -10,77 +45,42 @@ function closeNav() {
 }
 
 // mobile functions start here
-function mob_nMode() {
-    document.body.style.backgroundColor = "black";
-    document.getElementById("main").style.backgroundColor = "black";
-    // document.getElementById("relText").style.color = "white";
-    document.getElementById("txtMob").style.color = "white";
-    document.getElementById("txtJob").style.color = "white";
-    document.getElementById("txt1").style.color = "white";
-    document.getElementById("txt2").style.color = "white";
-    document.getElementById("txt3").style.color = "white";
-    document.getElementById("txt4").style.color = "white";
-    document.getElementById("txt5").style.color = "white";
-    document.getElementById("txt6").style.color = "white";
-    document.getElementById("night").style.display = "none";
-    document.getElementById("day").style.display = "flex";
-    document.getElementById("main").style.boxShadow = "0px 15px 10px -15px black";
-    // 0px 15px 10px -15px #111
-}
 
-function mob_lMode() {
-    document.getElementById("night").style.display = "flex";
-    document.body.style.backgroundColor = "white";
-    document.getElementById("main").style.backgroundColor = "white";
-    // document.getElementById("relText").style.color = "black";
-    document.getElementById("txtMob").style.color = "black";
-    document.getElementById("txtJob").style.color = "black";
-    document.getElementById("txt1").style.color = "black";
-    document.getElementById("txt2").style.color = "black";
-    document.getElementById("txt3").style.color = "black";
-    document.getElementById("txt4").style.color = "black";
-    document.getElementById("txt5").style.color = "black";
-    document.getElementById("txt6").style.color = "black";
-    document.getElementById("day").style.display = "none";
-    document.getElementById("main").style.boxShadow = "0px 15px 10px -15px grey";
-}
-// mobile functions ends here
 
-// desktop functions start here
-function nMode() {
-  document.body.style.backgroundColor = "black";
-  document.getElementById("main").style.backgroundColor = "black";
-  // document.getElementById("relText").style.color = "white";
-  document.getElementById("txtMob").style.color = "white";
-  document.getElementById("txtJob").style.color = "white";
-  document.getElementById("txt1").style.color = "white";
-  document.getElementById("txt2").style.color = "white";
-  document.getElementById("txt3").style.color = "white";
-  document.getElementById("txt4").style.color = "white";
-  document.getElementById("txt5").style.color = "white";
-  document.getElementById("txt6").style.color = "white";
-  document.getElementById("nights").style.display = "none";
-  document.getElementById("days").style.display = "flex";
-  document.getElementById("main").style.boxShadow = "0px 15px 10px -15px black";
-  // 0px 15px 10px -15px #111
-}
+// var container = document.getElementsByTagName('body')[0];
+// document.getElementById('toggler').addEventListener('change', (event) => {
+//   console.log(toggler)
+//   event.target.checked ? container.removeAttribute('data-theme') : container.setAttribute('data-theme', 'dark');
+// });
 
-function lMode() {
-  document.getElementById("nights").style.display = "flex";
-  document.body.style.backgroundColor = "white";
-  document.getElementById("main").style.backgroundColor = "white";
-  // document.getElementById("relText").style.color = "black";
-  document.getElementById("txtMob").style.color = "black";
-  document.getElementById("txtJob").style.color = "black";
-  document.getElementById("txt1").style.color = "black";
-  document.getElementById("txt2").style.color = "black";
-  document.getElementById("txt3").style.color = "black";
-  document.getElementById("txt4").style.color = "black";
-  document.getElementById("txt5").style.color = "black";
-  document.getElementById("txt6").style.color = "black";
-  document.getElementById("days").style.display = "none";
-  document.getElementById("main").style.boxShadow = "0px 15px 10px -15px grey";
-}
+
+
+
+// const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+// const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+// if (currentTheme) {
+//     document.documentElement.setAttribute('data-theme', currentTheme);
+
+//     if (currentTheme === 'dark') {
+//         toggleSwitch.checked = true;
+//     }
+// }
+
+// function switchTheme(e) {
+//     if (e.target.checked) {
+//         document.documentElement.setAttribute('data-theme', 'dark');
+//         localStorage.setItem('theme', 'dark'); //add this
+//     }
+//     else {
+//         document.documentElement.setAttribute('data-theme', 'light');
+//         localStorage.setItem('theme', 'light'); //add this
+//     }    
+// }
+
+// toggleSwitch.addEventListener('change', switchTheme, false);
+
 
 function hoverMode() {
   const txt1 = document.getElementById("txt2").style.color = "cyan"

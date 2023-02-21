@@ -7,9 +7,9 @@
     <title>ICE-BERG PORTFOLIO | HOME</title>
     <link href="/build/tailwind.css" rel="stylesheet">
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="images/ICE_LOGO_temp_3.png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js/index.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
     </style>
@@ -25,14 +25,13 @@
         <a href="contact.html" class="text-gray-200 mt-10 text-center space-y-2 block hover:text-cyan-500 ease-in duration-500 text-xl">CONTACT <span>ME</span></a></li>
     </div>
     <!-- My Mobile Nav Ends Here -->
-    <nav id="main" class="w-screen flex justify-between bg-white px-2 py-2 lg:shadow-lg lg:shadow-grey-700 lg:px-6 lg:space-y-4 lg:sticky lg:top-0">
+    <nav id="main" class="w-screen flex justify-between px-2 py-2 lg:shadow-lg lg:shadow-grey-700 lg:px-6 lg:space-y-4 lg:sticky lg:top-0">
         <a href="index.html" class="flex items-center">
             <img src="images/ICE_LOGO_temp_3.png" class="h-12 mr-3 sm:h-16 lg:h-16">
             <span class="self-center text-3xl font-semibold whitespace-nowrap text-cyan-500 lg:text-4xl">ICE-BERG</span>
         </a>
         <ul class="flex items-center space-x-5 lg:hidden">
-            <li id="day" class="hidden"><i class="fas fa-sun fa-2x text-cyan-500 my-2" onclick="mob_lMode()"></i></li>
-            <li id="night"><i class="fas fa-moon fa-2x text-cyan-500 my-2" onclick="mob_nMode()"></i></li>
+            <li><i  id="MobIcon" class="fas fa-moon fa-2x text-cyan-500" onclick="toggleMobModes()"></i></li>
             <li><i class="fas fa-bars fa-2x text-cyan-500 my-2" onclick="openNav()"></i></li>
         </ul>
         <!-- My Desktop Nav Starts Here -->
@@ -41,24 +40,24 @@
             <li><a href="about.html" class="text-gray-400 text-xl hover:text-cyan-500 ease-in duration-500"><b>ABOUT ME</b></a></li>
             <li><a href="https://github.com/BenChris090?tab=repositories" class="text-gray-400 text-xl hover:text-cyan-500 ease-in duration-500"><b>OTHER <span>PROJECTS</span></b></a></li>
             <li><a href="contact.html" class="text-gray-400 text-xl hover:text-cyan-500 ease-in duration-500"><b>CONTACT <span>ME</span></b></a></li>
-            <li id="days" class="hidden"><i class="fas fa-sun fa-2x text-gray-400 ml-20 hover:text-cyan-500 ease-in duration-500" onclick="lMode()"></i></li>
-            <li id="nights"><i class="fas fa-moon fa-2x text-gray-400 ml-20 hover:text-cyan-500 ease-in duration-500" onclick="nMode()"></i></li>
-            <li><a href="mailto:benedictchrstn@gmail.com" class="text-gray-400 border-2 border-gray-400 rounded-3xl px-4 hover:text-cyan-500 hover:border-cyan-500 border-2 ease-in duration-500 text-xl">HIRE ME</a></li>
+            <li><i  id="icon" class="fas fa-moon fa-2x text-gray-400 ml-20 hover:text-cyan-500 ease-in duration-500" onclick="toggleModes()"></i></li>
+            <li><a href="mailto:benedictchrstn@gmail.com" class="text-gray-400 border-2 border-gray-400 rounded-3xl px-4 hover:text-cyan-500 hover:border-cyan-500 ease-in duration-500 text-xl">HIRE ME</a></li>
         </ul>
         <!-- My Desktop Nav Ends Here -->
     </nav>
-    <main class="w-screen flex p-4 mt-16 items-center lg:justify-around lg:justify-center lg:mx-auto lg:max-w-6xl lg:mt-8">
+    <main class="w-screen flex p-4 mt-16 items-center lg:justify-around lg:mx-auto lg:max-w-6xl lg:mt-8">
         <div id="txt1" class="space-y-2 lg:space-y-1 w-full pt-7 lg:w-1/2 lg:py-2 lg:mx-auto">
-            <h1 class="top-3 text-cyan-500 text-4xl lg:text-6xl"><span><p id="txtMob" class="text-sm text-black ease-in duration-500 lg:text-2xl">Hello, I Am</p></span><b>ONYEKA<br><span id="txt2" class="text-black text-3xl hover:text-cyan-500 ease-in duration-500 lg:text-5xl">BENEDICT OMEWU</span></b><br><span id="txtJob" class="inline-block text-black text-2xl mt-2 ease-in duration-500 lg:text-4xl lg:mt-5">I am a Backend Developer <br>and Tech fanatic.</span></h1>
+            <h1 class="top-3 text-cyan-500 text-4xl lg:text-6xl"><span><p class="txt-1 text-sm ease-in duration-500 lg:text-2xl">Hello, I Am</p></span><b>ONYEKA<br><span class="txt-1 text-3xl hover:text-cyan-500 ease-in duration-500 lg:text-5xl">BENEDICT OMEWU</span></b><br><span id="txtJob" class="txt-1 inline-block text-2xl mt-2 ease-in duration-500 lg:text-4xl lg:mt-5">I am a Fullstack Web Developer <br>and Tech fanatic.</span></h1>
             <p id="txt1" class="text-justify ease-in duration-500 lg:text-xl lg:pt-4 lg:max-w-sm">I build effective websites to help both groups and individuals implement certain stressful tasks digitally without the stress.</p>
 
             <ul class="flex lg:pt-2">
-                <li><a href="#"></a><i id="txt3" class="fas fa-at fa-2x text-black hover:text-cyan-500 ease-in duration-500"></i></li>
-                <li><a href="https://twitter.com/Benedic98349748"><i id="txt4" class="fab fa-twitter fa-2x text-black  ml-2 lg:ml-20 hover:text-cyan-500 ease-in duration-500"></i></a></li>
-                <li><a href="https://github.com/BenChris090"><i id="txt5" class="fab fa-github fa-2x text-black ml-2 lg:ml-20 hover:text-cyan-500 ease-in duration-500"></i></a></li>
-                <li><a href="https://linkedin.com/in/niklaus-omewu-63a7b7247"><i id="txt6" class="fab fa-linkedin fa-2x text-black ml-2 lg:ml-20 hover:text-cyan-500 ease-in duration-500"></i></a></li>
+                <li><a href="#"></a><i class="txt-1 fas fa-at fa-2x hover:text-cyan-500 ease-in duration-500"></i></li>
+                <li><a href="https://twitter.com/Benedic98349748"><i class="txt-1 fab fa-twitter fa-2x  ml-2 lg:ml-20 hover:text-cyan-500 ease-in duration-500"></i></a></li>
+                <li><a href="https://github.com/BenChris090"><i class="txt-1 fab fa-github fa-2x ml-2 lg:ml-20 hover:text-cyan-500 ease-in duration-500"></i></a></li>
+                <li><a href="https://linkedin.com/in/niklaus-omewu-63a7b7247"><i class="txt-1 fab fa-linkedin fa-2x ml-2 lg:ml-20 hover:text-cyan-500 ease-in duration-500"></i></a></li>
             </ul>
         </div>
     </main>
 </body>
+<script src="js/index.js"></script>
 </html>
