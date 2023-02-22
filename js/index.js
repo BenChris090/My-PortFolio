@@ -1,30 +1,42 @@
 let darkMode = localStorage.getItem("dark-mode");
 
 function toggleMobModes() {
-  const icon = document.getElementById("MobIcon");
-  document.body.classList.toggle("dark");
-  if(document.body.classList.contains("dark")){
-    icon.classList.remove("fa-moon");
-    icon.classList.add("fa-sun");
-    localStorage.setItem("dark-mode", true);
+  darkMode = localStorage.getItem("dark-mode");
+  if (darkMode === "true"){
+    document.body.classList.remove("dark");
   }else{
-    icon.classList.remove("fa-sun");
-    icon.classList.add("fa-moon");
-    localStorage.setItem("dark-mode", false);
+    document.body.classList.add("dark");
+  }
+  if(document.body.classList.contains("dark")){
+    MobIcon.classList.remove("fa-moon");
+    MobIcon.classList.add("fa-sun");
+    localStorage.setItem("dark-mode", "true");
+  }else{
+    MobIcon.classList.remove("fa-sun");
+    MobIcon.classList.add("fa-moon");
+    localStorage.setItem("dark-mode", "false");
   }
 }
 
 function toggleModes() {
-  const icon = document.getElementById("icon");
-  document.body.classList.toggle("dark");
+  darkMode = localStorage.getItem("dark-mode");
+  if (darkMode === "true"){
+    document.body.classList.remove("dark");
+  }else{
+    document.body.classList.add("dark");
+  }
+  switchIcons()
+}
+
+function switchIcons() {
   if(document.body.classList.contains("dark")){
     icon.classList.remove("fa-moon");
     icon.classList.add("fa-sun");
-    localStorage.setItem("dark-mode", true);
+    localStorage.setItem("dark-mode", "true");
   }else{
     icon.classList.remove("fa-sun");
     icon.classList.add("fa-moon");
-    localStorage.setItem("dark-mode", false);
+    localStorage.setItem("dark-mode", "false");
   }
 }
 
